@@ -8,32 +8,30 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <div>
-            <details open>
-                <summary>tópicos sugeridos</summary>
+    <div class="container">
+        <div class="sidebar">
+            <details open class="suggestion">
+                <summary>Tópicos Sugeridos</summary>
                 <button>HTML</button>
                 <button>CSS</button>
                 <button>JavaScript</button>
                 <button>TypeScript</button>
             </details>
 
-            <details open>
+            <details open class="historic">
                 <summary>Histórico</summary>
                 <button>Java</button>
                 <button>PHP</button>
             </details>
-
         </div>
 
-        <div>
-
-            <div>
+        <div class="content">
+            <div class="box-home">
                 <span>Olá, eu sou o</span>
-                <h1>Prates.me</h1>
+                <h1>Prates <span>.me</span></h1>
                 
                 <p>
                     Estou aqui para te ajudar nos seus estudos.
@@ -41,21 +39,19 @@
                     ou digite um tópico que deseja estudar para 
                     começarmos.    
                 </p>
-                <div>
-
+                
+                <div class="box-input">
                     <div>
                         <textarea placeholder="Insira o tema que deseja estudar..."></textarea>
                         <button>Enviar Pergunta</button>
                     </div>
 
-                    <div>
-                        <p>
-                            Prates.me
-                        </p>
+                    <div class="box-footer">
+                        <p>Prates <span>.me</span></p>
                     </div>
-   
                 </div>
             </div>
         </div>
+    </div>
 </body>
 </html>
